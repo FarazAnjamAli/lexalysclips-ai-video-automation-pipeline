@@ -1,0 +1,67 @@
+{
+  "id": "ice_minimal",
+  "name": "Ice Minimal (aesthetic / luxury / cars)",
+  "layout": "full",
+  "bg": "#000000",
+  "fonts": {
+    "header": "Montserrat",
+    "list": "Montserrat",
+    "badge": "Montserrat"
+  },
+  "colors": {
+    "headerText": "#FFFFFF",
+    "headerStroke": "#000000",
+    "headerBg": "#000000",
+    "accent": "#7DD3FC",
+    "listText": "#FFFFFF",
+    "listNumber": "#7DD3FC",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#0B3B57",
+    "badgeBg": "#000000",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "plain",
+    "size": 80,
+    "weight": 800,
+    "y": 130,
+    "uppercase": true,
+    "tracking": 8
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 450,
+    "size": 46,
+    "rowHeight": 80,
+    "width": 820
+  },
+  "badge": {
+    "style": "slam",
+    "size": 300,
+    "hold": 0.6,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 64,
+    "bottom": 300
+  },
+  "transition": "slideup",
+  "sfx": {
+    "transition": "whoosh_2",
+    "reveal": "text_swoosh",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_chill_127.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.65,
+  "watermark": {
+    "opacity": 0.16,
+    "size": 30
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "lexalys_history",
+  "name": "Lexalys History (documentary)",
+  "layout": "boxed",
+  "bg": "#08080a",
+  "boxTop": 680,
+  "boxHeight": 720,
+  "fonts": {
+    "header": "Bebas Neue",
+    "list": "Oswald",
+    "badge": "Bebas Neue"
+  },
+  "colors": {
+    "headerText": "#F5F5F0",
+    "headerStroke": "#0a0b05",
+    "headerBg": "#c6f432",
+    "accent": "#c6f432",
+    "listText": "#F5F5F0",
+    "listNumber": "#c6f432",
+    "badgeText": "#0a0b05",
+    "badgeStroke": "#0a0b05",
+    "badgeBg": "#c6f432",
+    "labelText": "#F5F5F0",
+    "hookText": "#0a0b05"
+  },
+  "header": {
+    "style": "plain",
+    "size": 120,
+    "y": 150,
+    "uppercase": true,
+    "tracking": 4
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1440,
+    "size": 54,
+    "rowHeight": 84,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 210,
+    "hold": 0.6,
+    "box": true,
+    "y": 40
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "zoom",
+  "sfx": {
+    "transition": "whoosh_2",
+    "reveal": "text_swoosh",
+    "revealFinal": "impact_boom"
+  },
+  "music": "Epic_Unease.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.5,
+  "watermark": {
+    "opacity": 0.18,
+    "size": 30
+  }
+}

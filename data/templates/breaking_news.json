@@ -1,0 +1,67 @@
+{
+  "id": "breaking_news",
+  "name": "Breaking News (facts / events / world)",
+  "layout": "boxed",
+  "bg": "#0D0D0F",
+  "boxTop": 660,
+  "boxHeight": 740,
+  "fonts": {
+    "header": "Oswald",
+    "list": "Montserrat",
+    "badge": "Oswald"
+  },
+  "colors": {
+    "headerText": "#FFFFFF",
+    "headerStroke": "#000000",
+    "headerBg": "#D90429",
+    "accent": "#D90429",
+    "listText": "#FFFFFF",
+    "listNumber": "#D90429",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#000000",
+    "badgeBg": "#D90429",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "box",
+    "size": 78,
+    "weight": 700,
+    "y": 150,
+    "uppercase": true,
+    "tracking": 1
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1460,
+    "size": 50,
+    "rowHeight": 80,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 190,
+    "hold": 0.6,
+    "box": true,
+    "y": 40
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "cut",
+  "sfx": {
+    "transition": "text_swoosh",
+    "reveal": "ui_pop",
+    "revealFinal": "impact_boom"
+  },
+  "music": "mixkit_cinematic_140.mp3",
+  "musicVolume": 0.35,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.45,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "fails_comic",
+  "name": "Fails & Funny (comic / try not to laugh)",
+  "layout": "full",
+  "bg": "#000000",
+  "fonts": {
+    "header": "Bangers",
+    "list": "Bangers",
+    "badge": "Bangers"
+  },
+  "colors": {
+    "headerText": "#FFE600",
+    "headerStroke": "#000000",
+    "headerBg": "#1E66FF",
+    "accent": "#FF3B30",
+    "listText": "#FFFFFF",
+    "listNumber": "#FFE600",
+    "badgeText": "#FFE600",
+    "badgeStroke": "#000000",
+    "badgeBg": "#1E66FF",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "stroke",
+    "size": 120,
+    "strokeWidth": 16,
+    "y": 100,
+    "uppercase": true,
+    "tracking": 2
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 460,
+    "size": 60,
+    "rowHeight": 90,
+    "width": 820
+  },
+  "badge": {
+    "style": "slam",
+    "size": 360,
+    "hold": 0.5,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 86,
+    "bottom": 300
+  },
+  "transition": "shake",
+  "sfx": {
+    "transition": "text_swoosh",
+    "reveal": "ui_pop",
+    "revealFinal": "impact_boom"
+  },
+  "music": "mixkit_upbeat_1063.mp3",
+  "musicVolume": 0.35,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.7,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

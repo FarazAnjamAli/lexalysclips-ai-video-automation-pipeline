@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FARAZ Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">FA</span> FARAZ <b>STUDIO</b><small>Viral Shorts maker</small></div>
+  <nav>
+    <button class="tab active" data-tab="studio">Studio</button>
+    <button class="tab" data-tab="templates">Templates</button>
+    <button class="tab" data-tab="queue">Queue <span id="qcount" class="pill">0</span></button>
+  </nav>
+  <div class="topright">
+    <div class="stats" id="stats"></div>
+    <button id="openSettings" class="btn ghost iconbtn" title="Settings">⚙</button>
+  </div>
+</header>
+
+<!-- ======================= STUDIO ======================= -->
+<main id="tab-studio" class="tabpane active">
+  <!-- MEDIA -->
+  <section class="col media">
+    <h3>Media</h3>
+    <label class="btn primary full">⬆ Upload clips / images<input id="file" type="file" multiple accept="video/*,image/*" hidden></label>
+    <div class="linkbox">
+      <input id="linkUrl" placeholder="Paste a TikTok / YouTube / Insta link…">
+      <div class="row">
+        <input id="linkStart" placeholder="start s" class="sm" title="optional trim start (seconds)">
+        <input id="linkEnd" placeholder="end s" class="sm" title="optional trim end (seconds)">
+        <button id="linkGo" class="btn">Import</button>
+      </div>
+      <label class="chk keepaud"><input type="checkbox" id="linkKeepAudio"> Keep the video's original sound</label>
+      <div class="hint">HD, no watermark. TikTok works instantly; Instagram needs you logged into Chrome.</div>
+    </div>
+    <div id="ingestStatus" class="status"></div>
+    <input id="mediaFilter" placeholder="Search media…" class="search">
+    <div id="mediaGrid" class="grid"></div>
+  </section>
+
+  <!-- EDITOR -->
+  <section class="col editor">
+    <div class="projbar">
+      <select id="projSel"></select>
+      <button id="projNew" class="btn">＋ New Short</button>
+      <button id="projDup" class="btn ghost">Duplicate</button>
+      <button id="projDel" class="btn ghost danger">Delete</button>
+    </div>
+    <div class="field"><label>Header title (stays on screen)</label><input id="pTitle"></div>
+    <div class="field"><label>Hook (first 1.6 s, optional)</label><input id="pHook" placeholder="WAIT FOR #1"></div>
+    <div class="viralbar">
+      <button id="genMeta" class="btn ai">✨ Generate title + hashtags</button>
+      <button id="genCaps" class="btn ai">⚡ Auto-captions</button>
+      <span id="viralHint" class="hint"></span>
+    </div>
+    <div class="rankhead"><h3>Ranking <small>top plays first → bottom is #1</small></h3><span id="dur" class="pill big"></span></div>
+    <div id="items" class="items"><div class="empty">Add clips from the Media panel. Drag cards to reorder.</div></div>
+  </section>
+
+  <!-- STYLE / RENDER -->
+  <section class="col settings">
+    <h3>Look &amp; Sound</h3>
+    <div class="field"><label>Template</label><select id="pTemplate"></select></div>
+    <div id="tplSwatch" class="swatch"></div>
+    <div class="field"><label>Music</label><select id="pMusic"></select></div>
+    <div class="field"><label>Music volume <span id="mvVal"></span></label><input id="pMusicVol" type="range" min="0" max="1" step="0.05"></div>
+    <div class="field"><label>Caption style</label><select id="pCapStyle">
+      <option value="pop">Pop (yellow highlight)</option><option value="box">Boxed (TikTok style)</option><option value="clean">Clean white</option></select></div>
+    <div class="field"><label>Watermark (very light, drifting)</label><input id="pWatermark"></div>
+    <div class="field"><label>Outro / CTA text</label><input id="pOutro" placeholder="FOLLOW FOR MORE VIDEOS"></div>
+    <div class="actions">
+      <button id="save" class="btn">💾 Save</button>
+      <button id="renderPrev" class="btn">⚡ Quick preview</button>
+      <button id="renderFinal" class="btn primary">🎬 Render 1080×1920</button>
+    </div>
+    <div id="renderStatus" class="status"></div>
+    <div class="bar"><div id="renderBar"></div></div>
+    <video id="outVideo" controls playsinline></video>
+    <a id="outLink" class="dl" target="_blank"></a>
+  </section>
+</main>
+
+<!-- ======================= TEMPLATES ======================= -->
+<main id="tab-templates" class="tabpane">
+  <section class="col tlist"><h3>Templates</h3><div id="tplList"></div></section>
+  <section class="col teditor"><h3 id="tplTitle">Edit template</h3><div id="tplForm" class="tform"></div>
+    <div class="actions"><button id="tplSave" class="btn primary">💾 Save template</button><button id="tplDup" class="btn">Duplicate</button></div>
+    <div id="tplStatus" class="status"></div>
+  </section>
+</main>
+
+<!-- ======================= QUEUE ======================= -->
+<main id="tab-queue" class="tabpane">
+  <section class="col wide">
+    <div class="projbar"><h3>Today's Shorts</h3>
+      <button id="renderAll" class="btn primary">🎬 Render all drafts</button>
+      <button id="openOut" class="btn">📂 Open output folder</button></div>
+    <table class="qtable"><thead><tr><th>Short</th><th>Template</th><th>Clips</th><th>Length</th><th>Status</th><th>Output</th></tr></thead><tbody id="qBody"></tbody></table>
+  </section>
+</main>
+
+<!-- ======================= MODALS ======================= -->
+<div id="modalBack" class="modalback">
+  <!-- Settings -->
+  <div id="settingsModal" class="modal">
+    <div class="mhead"><h3>Settings</h3><button class="btn ghost iconbtn mclose">✕</button></div>
+    <div class="field"><label>Groq API key <small>(free — powers AI titles &amp; auto-captions)</small></label>
+      <input id="setGroq" type="password" placeholder="gsk_… (leave as ***set*** to keep current)"></div>
+    <div class="hint">Get a free key at console.groq.com → API Keys. Stored only on this PC.</div>
+    <div class="field"><label>Default caption style</label><select id="setCapStyle">
+      <option value="pop">Pop (yellow highlight)</option><option value="box">Boxed</option><option value="clean">Clean white</option></select></div>
+    <div class="field"><label>Browser for Instagram cookies</label><select id="setCookies">
+      <option value="chrome">Chrome</option><option value="edge">Edge</option><option value="firefox">Firefox</option><option value="brave">Brave</option></select></div>
+    <div class="actions"><button id="setSave" class="btn primary">Save settings</button></div>
+    <div id="setStatus" class="status"></div>
+  </div>
+  <!-- Generated meta -->
+  <div id="metaModal" class="modal">
+    <div class="mhead"><h3>Viral title + hashtags</h3><button class="btn ghost iconbtn mclose">✕</button></div>
+    <div id="metaBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

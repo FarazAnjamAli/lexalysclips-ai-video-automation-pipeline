@@ -1,0 +1,67 @@
+{
+  "id": "gamer_rgb",
+  "name": "Gamer RGB (clutch plays / gaming)",
+  "layout": "full",
+  "bg": "#05010D",
+  "fonts": {
+    "header": "Archivo Black",
+    "list": "Montserrat",
+    "badge": "Archivo Black"
+  },
+  "colors": {
+    "headerText": "#00F0FF",
+    "headerStroke": "#1A0033",
+    "headerBg": "#000000",
+    "accent": "#B026FF",
+    "listText": "#FFFFFF",
+    "listNumber": "#00F0FF",
+    "badgeText": "#00F0FF",
+    "badgeStroke": "#B026FF",
+    "badgeBg": "#000000",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "stroke",
+    "size": 84,
+    "strokeWidth": 14,
+    "y": 110,
+    "uppercase": true,
+    "tracking": 1
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 440,
+    "size": 50,
+    "rowHeight": 84,
+    "width": 820
+  },
+  "badge": {
+    "style": "slam",
+    "size": 320,
+    "hold": 0.5,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 72,
+    "bottom": 300
+  },
+  "transition": "glitch",
+  "sfx": {
+    "transition": "glitch",
+    "reveal": "ui_pop",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_electronic_107.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.75,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

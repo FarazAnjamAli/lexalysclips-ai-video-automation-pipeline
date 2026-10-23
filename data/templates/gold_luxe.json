@@ -1,0 +1,66 @@
+{
+  "id": "gold_luxe",
+  "name": "Gold Luxe (money / celebs / sports)",
+  "layout": "boxed",
+  "bg": "#000000",
+  "boxTop": 660,
+  "boxHeight": 760,
+  "fonts": {
+    "header": "Archivo Black",
+    "list": "Montserrat",
+    "badge": "Bebas Neue"
+  },
+  "colors": {
+    "headerText": "#F5C542",
+    "headerStroke": "#000000",
+    "headerBg": "#1A1406",
+    "accent": "#F5C542",
+    "listText": "#FFFFFF",
+    "listNumber": "#F5C542",
+    "badgeText": "#000000",
+    "badgeStroke": "#000000",
+    "badgeBg": "#F5C542",
+    "labelText": "#FFFFFF",
+    "hookText": "#000000"
+  },
+  "header": {
+    "style": "stroke",
+    "size": 80,
+    "strokeWidth": 10,
+    "y": 150,
+    "uppercase": true
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1470,
+    "size": 52,
+    "rowHeight": 80,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 220,
+    "hold": 0.6,
+    "box": true,
+    "y": 20
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "whip",
+  "sfx": {
+    "transition": "whoosh_1",
+    "reveal": "ui_pop",
+    "revealFinal": "bass_drop"
+  },
+  "music": "Exit_the_Premises.mp3",
+  "musicVolume": 0.38,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.55,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 30
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "lexalys_neon",
+  "name": "Lexalys Neon (signature)",
+  "layout": "full",
+  "bg": "#08080a",
+  "fonts": {
+    "header": "Anton",
+    "list": "Montserrat",
+    "badge": "Anton"
+  },
+  "colors": {
+    "headerText": "#0a0b05",
+    "headerStroke": "#0a0b05",
+    "headerBg": "#c6f432",
+    "accent": "#c6f432",
+    "listText": "#F5F5F0",
+    "listNumber": "#F5F5F0",
+    "badgeText": "#c6f432",
+    "badgeStroke": "#0a0b05",
+    "badgeBg": "#c6f432",
+    "labelText": "#F5F5F0",
+    "hookText": "#0a0b05"
+  },
+  "header": {
+    "style": "box",
+    "size": 86,
+    "y": 110,
+    "uppercase": true,
+    "tracking": 2
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 450,
+    "size": 52,
+    "rowHeight": 86,
+    "width": 860
+  },
+  "badge": {
+    "style": "slam",
+    "size": 330,
+    "hold": 0.55,
+    "box": false,
+    "y": 130
+  },
+  "caption": {
+    "show": true,
+    "size": 76,
+    "bottom": 300
+  },
+  "transition": "glitch",
+  "sfx": {
+    "transition": "glitch",
+    "reveal": "text_swoosh",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_electronic_107.mp3",
+  "musicVolume": 0.38,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.78,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

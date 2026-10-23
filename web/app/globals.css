@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────
+   RANKREEL THEME — change colours here, everything follows.
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --bg: #08080a;
+  --surface: #0f0f12;
+  --surface-2: #151519;
+  --surface-3: #1c1c21;
+  --border: #212126;
+  --border-strong: #2d2d33;
+  --text: #f4f4f5;
+  --muted: #8d8d96;
+  --faint: #5a5a63;
+
+  --accent: #c6f432;        /* electric lime */
+  --accent-hover: #d4ff4a;
+  --accent-ink: #0a0b05;    /* text on top of accent */
+  --accent-soft: rgba(198, 244, 50, 0.1);
+  --accent-line: rgba(198, 244, 50, 0.35);
+
+  --danger: #ff5a5f;
+  --danger-soft: rgba(255, 90, 95, 0.1);
+  --warn: #ffb020;
+
+  --radius: 8px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warn: var(--warn);
+  --font-sans: var(--font-ui);
+  --font-mono: var(--font-ui-mono);
+}
+
+/* Video fonts (served by the Rankreel server) — used for template previews */
+@font-face { font-family: "Anton"; src: url("/assets/fonts/Anton-Regular.ttf"); font-display: swap; }
+@font-face { font-family: "Bebas Neue"; src: url("/assets/fonts/BebasNeue-Regular.ttf"); font-display: swap; }
+@font-face { font-family: "Oswald"; src: url("/assets/fonts/Oswald.ttf"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Montserrat"; src: url("/assets/fonts/Montserrat.ttf"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Archivo Black"; src: url("/assets/fonts/ArchivoBlack-Regular.ttf"); font-display: swap; }
+@font-face { font-family: "Bangers"; src: url("/assets/fonts/Bangers-Regular.ttf"); font-display: swap; }
+
+html, body { height: 100%; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui), system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.005em;
+}
+::selection { background: var(--accent); color: var(--accent-ink); }
+* { scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent; }
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 h-8 px-3 rounded-[var(--radius)] border border-border-strong
+      bg-surface-2 text-[12.5px] font-medium text-text whitespace-nowrap select-none
+      transition-colors duration-150 hover:bg-surface-3 hover:border-[#3a3a41]
+      disabled:opacity-40 disabled:pointer-events-none cursor-pointer;
+  }
+  .btn svg { @apply size-3.5 shrink-0; stroke-width: 1.75; }
+  .btn-primary { @apply bg-accent border-accent text-accent-ink font-semibold hover:bg-[var(--accent-hover)] hover:border-[var(--accent-hover)]; }
+  .btn-ghost { @apply bg-transparent border-transparent text-muted hover:text-text hover:bg-surface-2 hover:border-transparent; }
+  .btn-outline { @apply bg-transparent; }
+  .btn-danger { @apply bg-transparent border-transparent text-muted hover:text-danger hover:bg-danger-soft hover:border-transparent; }
+  .btn-icon { @apply w-8 px-0; }
+  .btn-sm { @apply h-7 px-2.5 text-[12px]; }
+  .btn-sm.btn-icon { @apply w-7 px-0; }
+  .btn-lg { @apply h-10 px-4 text-[13px]; }
+
+  /* Inputs */
+  .input {
+    @apply w-full h-8 px-2.5 rounded-[var(--radius)] border border-border bg-surface text-[13px] text-text
+      placeholder:text-faint outline-none transition-colors
+      hover:border-border-strong focus:border-[var(--accent-line)] focus:bg-surface-2;
+  }
+  textarea.input { @apply h-auto py-2; }
+  select.input {
+    @apply appearance-none pr-8 cursor-pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%238d8d96' stroke-width='1.5' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  select.input option, select.input optgroup { background: var(--surface-2); color: var(--text); }
+  .label { @apply block mb-1.5 text-[11px] font-medium uppercase tracking-[0.08em] text-muted; }
+
+  /* Surfaces */
+  .panel { @apply bg-surface border border-border rounded-[10px]; }
+  .section-title { @apply text-[11px] font-semibold uppercase tracking-[0.12em] text-muted; }
+  .chip {
+    @apply inline-flex items-center gap-1 h-5 px-1.5 rounded-[5px] border border-border-strong bg-surface-2
+      text-[10.5px] font-medium text-muted tabular-nums;
+  }
+  .chip-accent { @apply border-[var(--accent-line)] bg-accent-soft text-accent; }
+  .chip-danger { @apply border-[rgba(255,90,95,.35)] bg-danger-soft text-danger; }
+
+  /* Range */
+  .range { @apply w-full h-1 appearance-none rounded-full bg-border-strong cursor-pointer accent-[var(--accent)]; }
+  .range::-webkit-slider-thumb { @apply appearance-none size-3.5 rounded-full bg-accent border-2 border-bg; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TOUCH / MOBILE — bigger tap targets, no iOS zoom-on-focus
+   ───────────────────────────────────────────────────────────── */
+@layer components {
+  @media (pointer: coarse) {
+    .btn { height: 2.5rem; padding-inline: 0.875rem; font-size: 13px; }
+    .btn-sm { height: 2.25rem; padding-inline: 0.75rem; }
+    .btn-icon { width: 2.5rem; padding-inline: 0; }
+    .btn-sm.btn-icon { width: 2.25rem; padding-inline: 0; }
+    .btn-lg { height: 2.75rem; }
+    .input { height: 2.5rem; font-size: 16px; }
+    textarea.input { height: auto; }
+    .range { height: 6px; }
+    .range::-webkit-slider-thumb { width: 1.25rem; height: 1.25rem; }
+  }
+}
+html { -webkit-text-size-adjust: 100%; }
+body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; }

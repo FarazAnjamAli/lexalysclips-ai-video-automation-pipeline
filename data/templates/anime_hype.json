@@ -1,0 +1,67 @@
+{
+  "id": "anime_hype",
+  "name": "Anime Hype (anime moments / edits)",
+  "layout": "full",
+  "bg": "#0A0010",
+  "fonts": {
+    "header": "Bebas Neue",
+    "list": "Montserrat",
+    "badge": "Bebas Neue"
+  },
+  "colors": {
+    "headerText": "#FFFFFF",
+    "headerStroke": "#FF2E93",
+    "headerBg": "#000000",
+    "accent": "#FF2E93",
+    "listText": "#FFFFFF",
+    "listNumber": "#FF2E93",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#FF2E93",
+    "badgeBg": "#000000",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "stroke",
+    "size": 120,
+    "strokeWidth": 10,
+    "y": 100,
+    "uppercase": true,
+    "tracking": 4
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 470,
+    "size": 52,
+    "rowHeight": 86,
+    "width": 820
+  },
+  "badge": {
+    "style": "slam",
+    "size": 360,
+    "hold": 0.5,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 76,
+    "bottom": 300
+  },
+  "transition": "flash",
+  "sfx": {
+    "transition": "whoosh_1",
+    "reveal": "impact_boom",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_hype_258.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.7,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

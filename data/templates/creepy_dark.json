@@ -1,0 +1,67 @@
+{
+  "id": "creepy_dark",
+  "name": "Creepy Dark (scary / mysteries / horror)",
+  "layout": "boxed",
+  "bg": "#050505",
+  "boxTop": 680,
+  "boxHeight": 720,
+  "fonts": {
+    "header": "Oswald",
+    "list": "Oswald",
+    "badge": "Oswald"
+  },
+  "colors": {
+    "headerText": "#E8E8E8",
+    "headerStroke": "#000000",
+    "headerBg": "#000000",
+    "accent": "#B00000",
+    "listText": "#D9D9D9",
+    "listNumber": "#B00000",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#000000",
+    "badgeBg": "#B00000",
+    "labelText": "#E8E8E8",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "plain",
+    "size": 88,
+    "weight": 700,
+    "y": 150,
+    "uppercase": true,
+    "tracking": 6
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1450,
+    "size": 50,
+    "rowHeight": 80,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 200,
+    "hold": 0.7,
+    "box": true,
+    "y": 40
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "zoom",
+  "sfx": {
+    "transition": "whoosh_2",
+    "reveal": "impact_boom",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_cinematic_184.mp3",
+  "musicVolume": 0.45,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.55,
+  "watermark": {
+    "opacity": 0.16,
+    "size": 30
+  }
+}

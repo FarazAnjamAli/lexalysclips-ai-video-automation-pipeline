@@ -1,0 +1,11 @@
+{ "id": "fire_rank", "name": "Fire Rank (viral classic)", "layout": "full", "bg": "#000000",
+  "fonts": { "header": "Anton", "list": "Montserrat", "badge": "Anton" },
+  "colors": { "headerText": "#FFD400", "headerStroke": "#000000", "headerBg": "#E31937", "accent": "#FF2D2D", "listText": "#FFFFFF", "listNumber": "#FFD400",
+              "badgeText": "#FFD400", "badgeStroke": "#000000", "badgeBg": "#E31937", "labelText": "#FFFFFF", "hookText": "#FFFFFF" },
+  "header": { "style": "stroke", "size": 96, "strokeWidth": 16, "y": 110, "uppercase": true },
+  "list": { "show": true, "x": 40, "y": 430, "size": 54, "rowHeight": 88, "width": 820 },
+  "badge": { "style": "slam", "size": 320, "hold": 0.6, "box": false, "y": 140 },
+  "caption": { "show": true, "size": 78, "bottom": 300 },
+  "transition": "flash", "sfx": { "transition": "whoosh_1", "reveal": "impact_boom", "revealFinal": "bass_drop" },
+  "music": "Volatile_Reaction.mp3", "musicVolume": 0.35, "progress": true, "outro": true, "topShade": 0.75,
+  "watermark": { "opacity": 0.2, "size": 34 } }

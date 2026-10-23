@@ -1,0 +1,67 @@
+{
+  "id": "lexalys_story",
+  "name": "Lexalys Story (storytime / mysteries)",
+  "layout": "full",
+  "bg": "#08080a",
+  "fonts": {
+    "header": "Montserrat",
+    "list": "Montserrat",
+    "badge": "Anton"
+  },
+  "colors": {
+    "headerText": "#F5F5F0",
+    "headerStroke": "#0a0b05",
+    "headerBg": "#c6f432",
+    "accent": "#c6f432",
+    "listText": "#F5F5F0",
+    "listNumber": "#F5F5F0",
+    "badgeText": "#c6f432",
+    "badgeStroke": "#0a0b05",
+    "badgeBg": "#c6f432",
+    "labelText": "#F5F5F0",
+    "hookText": "#0a0b05"
+  },
+  "header": {
+    "style": "plain",
+    "size": 78,
+    "weight": 900,
+    "y": 130,
+    "uppercase": true,
+    "tracking": 3
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 460,
+    "size": 46,
+    "rowHeight": 80,
+    "width": 840
+  },
+  "badge": {
+    "style": "slam",
+    "size": 300,
+    "hold": 0.6,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 70,
+    "bottom": 310
+  },
+  "transition": "slideup",
+  "sfx": {
+    "transition": "whoosh_1",
+    "reveal": "ui_pop",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_dramatic_601.mp3",
+  "musicVolume": 0.35,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.72,
+  "watermark": {
+    "opacity": 0.18,
+    "size": 32
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "cinema_scenes",
+  "name": "Cinema (movie scenes / series)",
+  "layout": "boxed",
+  "bg": "#000000",
+  "boxTop": 620,
+  "boxHeight": 780,
+  "fonts": {
+    "header": "Bebas Neue",
+    "list": "Oswald",
+    "badge": "Bebas Neue"
+  },
+  "colors": {
+    "headerText": "#F5C518",
+    "headerStroke": "#000000",
+    "headerBg": "#000000",
+    "accent": "#F5C518",
+    "listText": "#FFFFFF",
+    "listNumber": "#F5C518",
+    "badgeText": "#000000",
+    "badgeStroke": "#000000",
+    "badgeBg": "#F5C518",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "plain",
+    "size": 110,
+    "y": 140,
+    "uppercase": true,
+    "tracking": 6
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1430,
+    "size": 54,
+    "rowHeight": 84,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 210,
+    "hold": 0.6,
+    "box": true,
+    "y": 30
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "zoom",
+  "sfx": {
+    "transition": "whoosh_1",
+    "reveal": "impact_boom",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_cinematic_272.mp3",
+  "musicVolume": 0.45,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.5,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "white_caption",
+  "name": "White Caption (TikTok-style title box)",
+  "layout": "full",
+  "bg": "#000000",
+  "fonts": {
+    "header": "Montserrat",
+    "list": "Montserrat",
+    "badge": "Anton"
+  },
+  "colors": {
+    "headerText": "#000000",
+    "headerStroke": "#000000",
+    "headerBg": "#FFFFFF",
+    "accent": "#FF2D55",
+    "listText": "#FFFFFF",
+    "listNumber": "#FFFFFF",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#000000",
+    "badgeBg": "#000000",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "box",
+    "size": 76,
+    "weight": 900,
+    "y": 120,
+    "uppercase": false,
+    "tracking": 0
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 440,
+    "size": 52,
+    "rowHeight": 86,
+    "width": 820,
+    "uppercase": false
+  },
+  "badge": {
+    "style": "slam",
+    "size": 320,
+    "hold": 0.55,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 72,
+    "bottom": 300
+  },
+  "transition": "zoom",
+  "sfx": {
+    "transition": "whoosh_1",
+    "reveal": "ui_pop",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_upbeat_1057.mp3",
+  "musicVolume": 0.35,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.6,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

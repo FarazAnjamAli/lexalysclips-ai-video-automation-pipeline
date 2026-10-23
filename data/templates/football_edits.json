@@ -1,0 +1,67 @@
+{
+  "id": "football_edits",
+  "name": "Football Edits (goals / skills / sports)",
+  "layout": "full",
+  "bg": "#000000",
+  "fonts": {
+    "header": "Bebas Neue",
+    "list": "Oswald",
+    "badge": "Bebas Neue"
+  },
+  "colors": {
+    "headerText": "#FFFFFF",
+    "headerStroke": "#000000",
+    "headerBg": "#000000",
+    "accent": "#00E676",
+    "listText": "#FFFFFF",
+    "listNumber": "#00E676",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#00A152",
+    "badgeBg": "#000000",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "stroke",
+    "size": 118,
+    "strokeWidth": 12,
+    "y": 100,
+    "uppercase": true,
+    "tracking": 3
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 470,
+    "size": 56,
+    "rowHeight": 88,
+    "width": 820
+  },
+  "badge": {
+    "style": "slam",
+    "size": 360,
+    "hold": 0.5,
+    "box": false,
+    "y": 140
+  },
+  "caption": {
+    "show": true,
+    "size": 80,
+    "bottom": 300
+  },
+  "transition": "whip",
+  "sfx": {
+    "transition": "whoosh_2",
+    "reveal": "impact_boom",
+    "revealFinal": "bass_drop"
+  },
+  "music": "mixkit_hype_224.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.7,
+  "watermark": {
+    "opacity": 0.2,
+    "size": 34
+  }
+}

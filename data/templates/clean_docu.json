@@ -1,0 +1,67 @@
+{
+  "id": "clean_docu",
+  "name": "Clean Docu (history / facts)",
+  "layout": "boxed",
+  "bg": "#0B0B0D",
+  "boxTop": 700,
+  "boxHeight": 700,
+  "fonts": {
+    "header": "Oswald",
+    "list": "Montserrat",
+    "badge": "Oswald"
+  },
+  "colors": {
+    "headerText": "#FFFFFF",
+    "headerStroke": "#000000",
+    "headerBg": "#E31937",
+    "accent": "#E31937",
+    "listText": "#FFFFFF",
+    "listNumber": "#E31937",
+    "badgeText": "#FFFFFF",
+    "badgeStroke": "#000000",
+    "badgeBg": "#E31937",
+    "labelText": "#FFFFFF",
+    "hookText": "#FFFFFF"
+  },
+  "header": {
+    "style": "plain",
+    "size": 92,
+    "weight": 700,
+    "y": 150,
+    "uppercase": true,
+    "tracking": 2
+  },
+  "list": {
+    "show": true,
+    "x": 40,
+    "y": 1450,
+    "size": 54,
+    "rowHeight": 84,
+    "width": 1000
+  },
+  "badge": {
+    "style": "slam",
+    "size": 200,
+    "hold": 0.6,
+    "box": true,
+    "y": 40
+  },
+  "caption": {
+    "show": false
+  },
+  "transition": "zoom",
+  "sfx": {
+    "transition": "whoosh_2",
+    "reveal": "text_swoosh",
+    "revealFinal": "impact_boom"
+  },
+  "music": "Epic_Unease.mp3",
+  "musicVolume": 0.4,
+  "progress": true,
+  "outro": true,
+  "topShade": 0.5,
+  "watermark": {
+    "opacity": 0.18,
+    "size": 30
+  }
+}

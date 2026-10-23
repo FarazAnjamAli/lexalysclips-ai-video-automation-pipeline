@@ -1,0 +1,11 @@
+{ "id": "neon_night", "name": "Neon Night (tech / cars)", "layout": "full", "bg": "#05060A",
+  "fonts": { "header": "Bebas Neue", "list": "Montserrat", "badge": "Bebas Neue" },
+  "colors": { "headerText": "#FFFFFF", "headerStroke": "#00E5FF", "headerBg": "#0A0F1E", "accent": "#00E5FF", "listText": "#FFFFFF", "listNumber": "#FF2D95",
+              "badgeText": "#00E5FF", "badgeStroke": "#05060A", "badgeBg": "#FF2D95", "labelText": "#FFFFFF", "hookText": "#05060A" },
+  "header": { "style": "box", "size": 104, "y": 100, "uppercase": true, "tracking": 3 },
+  "list": { "show": true, "x": 40, "y": 470, "size": 52, "rowHeight": 86, "width": 820 },
+  "badge": { "style": "slam", "size": 340, "hold": 0.55, "box": false, "y": 140 },
+  "caption": { "show": true, "size": 74, "bottom": 300 },
+  "transition": "glitch", "sfx": { "transition": "glitch", "reveal": "ui_pop", "revealFinal": "bass_drop" },
+  "music": "Cyborg_Ninja.mp3", "musicVolume": 0.35, "progress": true, "outro": true, "topShade": 0.8,
+  "watermark": { "opacity": 0.18, "size": 32 } }

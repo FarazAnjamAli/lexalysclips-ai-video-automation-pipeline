@@ -1,0 +1,11 @@
+{ "id": "viral_punch", "name": "Viral Punch (bold & loud)", "layout": "full", "bg": "#0a0a0a",
+  "fonts": { "header": "Archivo Black", "list": "Montserrat", "badge": "Anton" },
+  "colors": { "headerText": "#FFFFFF", "headerStroke": "#000000", "headerBg": "#FF2D2D", "accent": "#FF2D2D", "listText": "#FFFFFF", "listNumber": "#FFFFFF",
+              "badgeText": "#FFFFFF", "badgeStroke": "#FF2D2D", "badgeBg": "#FF2D2D", "labelText": "#FFFFFF", "hookText": "#FFFFFF" },
+  "header": { "style": "box", "size": 88, "strokeWidth": 14, "y": 100, "uppercase": true },
+  "list": { "show": true, "x": 40, "y": 450, "size": 52, "rowHeight": 86, "width": 820 },
+  "badge": { "style": "slam", "size": 340, "hold": 0.5, "box": false, "y": 130 },
+  "caption": { "show": true, "size": 80, "bottom": 300 },
+  "transition": "shake", "sfx": { "transition": "impact_boom", "reveal": "bass_drop", "revealFinal": "bass_drop" },
+  "music": "mixkit_hype_257.mp3", "musicVolume": 0.4, "progress": true, "outro": true, "topShade": 0.8,
+  "watermark": { "opacity": 0.18, "size": 34 } }
